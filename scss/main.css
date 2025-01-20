@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 4em;
+  background-color: #f4f6f9;
+}
+
+@media screen and (max-width: 1899px) {
+  body {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  body {
+    max-width: 1366px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  body {
+    max-width: 1024px;
+  }
+}
+
+h1 {
+  text-align: center;
+  border: 3px solid #f8cb00;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 45px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.frame {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 4em;
+          column-gap: 4em;
+}
+
+.frame .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 20px;
+  padding: 1em;
+  width: 100%;
+  height: 150px;
+  -webkit-box-shadow: 0 0 10px #c6c5c5;
+          box-shadow: 0 0 10px #c6c5c5;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.frame .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: inset 0 0 10px #c4c4c4;
+          box-shadow: inset 0 0 10px #c4c4c4;
+}
+
+.frame .card.member {
+  background-color: #f2fbff;
+}
+
+.frame .card.gold {
+  background-color: #fff198;
+}
+
+.frame .card.jewelry {
+  background-color: #c9aeff;
+}
+
+.frame .card.gold-rental {
+  background-color: #ffd5e7;
+}
+
+.frame .card .icon i {
+  font-size: 2em;
+}
+
+.frame .card .name {
+  font-size: 1.4em;
+}
+
+@media screen and (min-width: 1600px) {
+  .frame .card .name {
+    font-size: 1.8em;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #fbeea9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer p {
+  font-size: 12px;
+  color: gray;
+}
+/*# sourceMappingURL=main.css.map */
